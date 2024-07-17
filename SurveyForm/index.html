@@ -2,9 +2,65 @@
 <html>
 
 <head>
+  <meta lang="en" />
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+  <h1 id="title">Survey Form</h1>
+  <p id="description">Fill in the survey to get started</p>
+
+  <form id="survey-form">
+    <fieldset>
+      <label id="name-label">
+        Enter your name:
+        <input type="text" name="name" id="name" placeholder="Your name" required />
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <label id="age-label">
+        Enter your age:
+        <input type="number" name="age" id="age" min="18" max="100" placeholder="Your age" required />
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <label id="email-label">
+        Enter your email:
+        <input type="email" name="email" id="email" placeholder="Your email" required />
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <label></label>
+      <select id="dropdown">
+        <option></option>
+        <option></option>
+      </select>
+    </fieldset>
+
+    <fieldset>
+      <legend>
+        <input type="radio" id="radio" name="radio" />
+        <input type="radio" id="radio" name="radio" />
+      </legend>
+    </fieldset>
+
+    <fieldset>
+      <label>
+        <input type="checkbox" value="" />
+        <input type="checkbox" value="" />
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <textarea placeholder="Enter your comment"></textarea>
+    </fieldset>
+
+    <input type="submit" id="submit" />
+  </form>
 </body>
 
 </html>
